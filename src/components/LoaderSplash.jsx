@@ -39,8 +39,8 @@ const LoaderSplash = ({ setIsLoading }) => {
     let screenScale, screenPosition;
 
     if (window.innerWidth < 768) {
-      screenScale = [1, 1, 1];
-      screenPosition = [1, 1, 0];
+      screenScale = [8, 8, 8];
+      screenPosition = [0, -1, -6];
     } else {
       screenScale = [10.2, 10.2, 6];
       screenPosition = [0, -1, -6];
