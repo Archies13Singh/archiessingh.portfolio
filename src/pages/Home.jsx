@@ -13,7 +13,7 @@ import Snow from "../components/models/Snow";
 
 const Home = () => {
   const audioRef = useRef(new Audio(harryPotter));
-  audioRef.current.volume = 0.5;
+  audioRef.current.volume = 0.1;
   audioRef.current.loop = true;
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);

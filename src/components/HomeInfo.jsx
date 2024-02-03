@@ -25,7 +25,7 @@ const renderContent = {
   2: (
     <h1>
       <InfoBox
-        text="Worked with many companies"
+        text="Worked with some companies"
         link="/about"
         btnText="Learn More"
       />
@@ -34,7 +34,7 @@ const renderContent = {
   3: (
     <h1>
       <InfoBox
-        text="Led multiple projects success over the years. Curious about the impact"
+        text="Exploring diverse tech stacks to elevate project development and expand knowledge. Keenly interested in understanding the potential impact."
         link="/projects"
         btnText="Visit my Portfolio"
       />

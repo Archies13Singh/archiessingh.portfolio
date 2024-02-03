@@ -1,6 +1,6 @@
 import { valtech, terralive, geeks } from "../assets/images";
 import {
-  contact,
+  instagram,
   css,
   express,
   git,
@@ -138,18 +138,21 @@ export const experiences = [
 export const socialLinks = [
   {
     name: "Contact",
-    iconUrl: contact,
-    link: "/contact",
+    iconUrl: instagram,
+    link: "https://www.instagram.com/singh.archies13/",
+    bg_color : "bg-red-300"
   },
   {
     name: "GitHub",
     iconUrl: github,
-    link: "https://github.com/YourGitHubUsername",
+    link: "https://github.com/Archies13Singh",
+    bg_color : "bg-neutral-600"
   },
   {
     name: "LinkedIn",
     iconUrl: linkedin,
-    link: "https://www.linkedin.com/in/YourLinkedInUsername",
+    link: "https://www.linkedin.com/in/archies-singh-248721165/",
+    bg_color : "bg-sky-600"
   },
 ];
 
@@ -176,7 +179,7 @@ export const projects = [
     name: "3D Portfolio",
     description:
       "Elevate your online presence with my portfolio website, seamlessly blending React, THREEJS and VITE for a dynamic user experience.",
-    live_link: "",
+    live_link: "/",
     github_link: "https://github.com/Archies13Singh/Porfolio",
     tech_stack: [
       "https://threedportfolio.000webhostapp.com/react.png",
@@ -184,5 +187,18 @@ export const projects = [
       "https://threedportfolio.000webhostapp.com/threeJs.png",
     ],
     text_theme: "text-teal-500",
+  },
+  {
+    iconUrl: threads,
+    theme: "btn-back-blue",
+    name: "Human Identifier",
+    description:
+      "This project leverages Tensorflow for object detection using machine learning and integrates it seamlessly into a Next.js-based web application, providing a user-friendly interface for interacting with the object detection capabilities.",
+    github_link: "https://github.com/Archies13Singh/HumanIdentifier-",
+    tech_stack: [
+      "https://threedportfolio.000webhostapp.com/nextjs.svg",
+      "https://threedportfolio.000webhostapp.com/tensorflow.svg",
+    ],
+    text_theme: "text-sky-600",
   },
 ];

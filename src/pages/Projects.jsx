@@ -15,7 +15,11 @@ const Projects = () => {
       </h1>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-        Step into a world where code weaves magic, and pixels tell tales of innovation. Explore my web development portfolio—a showcase of seamless designs and flawless functionality. Each project is a journey through creativity, where the digital canvas comes alive. Join me in pushing the boundaries of web possibilities. 🚀🌐
+          Step into a world where code weaves magic, and pixels tell tales of
+          innovation. Explore my web development portfolio—a showcase of
+          seamless designs and flawless functionality. Each project is a journey
+          through creativity, where the digital canvas comes alive. Join me in
+          pushing the boundaries of web possibilities. 🚀🌐
         </p>
       </div>
       <div className="flex flex-wrap my-20 gap-16">
@@ -38,7 +42,9 @@ const Projects = () => {
               <p className="mt-2 text-slate-500">{project.description}</p>
 
               <div className="mt-2">
-                <p className={`font-semibold text-base tracking-wider ${project.text_theme}`}>
+                <p
+                  className={`font-semibold text-base tracking-wider ${project.text_theme}`}
+                >
                   Techology Used
                 </p>
                 <div className="flex justify-evenly p-4 flex-wrap">
@@ -58,23 +64,25 @@ const Projects = () => {
                 </div>
               </div>
               <div className="mt-5  items-center flex justify-between gap-2 font-poppins">
-                <div className="flex gap-1">
-                  <Link
-                    to={project.live_link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-blue-600"
-                  >
-                    Live Link
-                  </Link>
-                  <img
-                    src={arrow}
-                    alt="arrow"
-                    className="object-contain transform -rotate-45"
-                    width={12}
-                    height={12}
-                  />
-                </div>
+                {project.live_link && (
+                  <div className="flex gap-1">
+                    <Link
+                      to={project.live_link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-blue-600"
+                    >
+                      Live Link
+                    </Link>
+                    <img
+                      src={arrow}
+                      alt="arrow"
+                      className="object-contain transform -rotate-45"
+                      width={12}
+                      height={12}
+                    />
+                  </div>
+                )}
                 <div className="flex  gap-1">
                   <Link
                     to={project.github_link}

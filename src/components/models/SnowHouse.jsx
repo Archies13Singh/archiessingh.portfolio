@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import tavrenScene from "../../assets/3d/tavern_in_snow.glb"
@@ -37,12 +35,13 @@ const SnowHouse = ({ isRotating, setIsRotating,setCurrentStage, ...props })=>{
     e.stopPropagation();
     e.preventDefault();
     if (isRotating) {
+      console.log("I got caled")
       const clientX = e.touches ? e.touches[0].clientX : e.clientX;
       const delta = (clientX - lastX.current) / viewport.width; // is used to calculate the changein horizontal position
-
-      group.current.rotation.y += delta * 0.01 * Math.PI;
+      const rotationSpeedMultiplier = window.innerWidth < 768 ? 0.02 : 0.01;
+      group.current.rotation.y += delta * rotationSpeedMultiplier* Math.PI;
       lastX.current = clientX;
-      rotationSpeed.current = delta * 0.01 * Math.PI;
+      rotationSpeed.current = delta *rotationSpeedMultiplier * Math.PI;
     }
   };
 
