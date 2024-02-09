@@ -140,19 +140,19 @@ export const socialLinks = [
     name: "Contact",
     iconUrl: instagram,
     link: "https://www.instagram.com/singh.archies13/",
-    bg_color : "bg-red-300"
+    bg_color: "bg-red-300",
   },
   {
     name: "GitHub",
     iconUrl: github,
     link: "https://github.com/Archies13Singh",
-    bg_color : "bg-neutral-600"
+    bg_color: "bg-neutral-600",
   },
   {
     name: "LinkedIn",
     iconUrl: linkedin,
     link: "https://www.linkedin.com/in/archies-singh-248721165/",
-    bg_color : "bg-sky-600"
+    bg_color: "bg-sky-600",
   },
 ];
 
@@ -185,6 +185,7 @@ export const projects = [
       "https://threedportfolio.000webhostapp.com/react.png",
       "https://threedportfolio.000webhostapp.com/javascript.svg",
       "https://threedportfolio.000webhostapp.com/threeJs.png",
+      "https://threedportfolio.000webhostapp.com/emailJs.png",
     ],
     text_theme: "text-teal-500",
   },
@@ -200,5 +201,20 @@ export const projects = [
       "https://threedportfolio.000webhostapp.com/tensorflow.svg",
     ],
     text_theme: "text-sky-600",
+  },
+  {
+    iconUrl: threads,
+    theme: "btn-back-black",
+    name: "Image Generator Using OpenAI",
+    description:
+      "Embark on a visual journey with my DALL-E Image Generation project, merging AI and artistry to transform textual prompts into mesmerizing images. Experience seamless interaction through the user-friendly interface, powered by MERN .",
+    github_link: "https://github.com/Archies13Singh/AI_IMAGE_GENERATOR",
+    tech_stack: [
+      "https://threedportfolio.000webhostapp.com/mongodb.svg",
+      "https://threedportfolio.000webhostapp.com/express.png",
+      "https://threedportfolio.000webhostapp.com/react.png",
+      "https://threedportfolio.000webhostapp.com/nodejs.png",
+    ],
+    text_theme: "text-neutral-600",
   },
 ];
