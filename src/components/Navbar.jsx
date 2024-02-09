@@ -7,24 +7,23 @@ const Navbar = ({ path }) => {
     <header className="header">
       <NavLink
         to="/"
-        className="w-15 h-10 items-center justify-center flex font-bold"
+        className="w-15 h-10 items-center flex font-bold"
       >
         <div
           style={{
-            width: "120px",
             height: "180px",
-            padding: "15px",
+            marginTop: "32px",
+            padding : "10px"
           }}
         >
           <img
             src={FireLogo}
             alt="Your Image Alt Text"
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{ width: "100%", height: "80%", objectFit: "cover" }}
           />
         </div>
       </NavLink>
       <nav className="flex text-lg gap-7 font-medium">
-        {console.log(path)}
         <NavLink
           to="/about"
           className={({ isActive }) =>
@@ -48,6 +47,18 @@ const Navbar = ({ path }) => {
           }
         >
           <p style={{ fontSize: "16px" }}>Project</p>
+        </NavLink>
+        <NavLink
+          to="/education"
+          className={({ isActive }) =>
+            isActive
+              ? "text-blue-500"
+              : path === "/"
+              ? "text-white"
+              : "text-black"
+          }
+        >
+          <p style={{ fontSize: "16px" }}>Education</p>
         </NavLink>
       </nav>
     </header>

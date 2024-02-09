@@ -93,11 +93,91 @@ export const skills = [
   },
 ];
 
+export const education = [
+  {
+    title: "Inter School",
+    school_name: "Sanjuba High School",
+    icon: "https://threedportfolio.000webhostapp.com/sanjuba.png",
+    grade: 8.0,
+    location: "Nagpur, Maharashtra",
+    iconBg: "#F4EBBE",
+    date: "July 2006 - September 2016",
+    points: [
+      "Foundational Subjects: Core focus on Mathematics, English, Science, and Social Studies.",
+      "Basic Language Skills: Emphasis on reading, writing, and effective communication.",
+      "Introduction to Science Concepts: Early exposure to basic scientific principles and the world around them.",
+      "Mathematical Concepts: Progressive learning from basic arithmetic to advanced topics like geometry and algebra.",
+      "Cultural and Historical Awareness: Social Studies classes cover global history, geography, and diverse cultures.",
+    ],
+  },
+  {
+    title: "Higer Secondary Education ",
+    school_name: "Sri Chaitanya School",
+    icon: "https://threedportfolio.000webhostapp.com/chaitanya.png",
+    grade: "94%",
+    location: "Hyderabad, Telangana",
+    iconBg: "#b7e4c7",
+    date: "June 2016 - April 2018",
+    points: [
+      "Mastered calculus, algebra, and trigonometry in mathematics, honing problem-solving skills.",
+      "Explored classical mechanics, electromagnetism, and thermodynamics in physics for a comprehensive understanding.",
+      "Acquired in-depth knowledge in physical, inorganic, and organic chemistry, focusing on core concepts.",
+      "Developed strong analytical and time-management skills through regular practice, mock tests, and strategic revision.",
+    ],
+  },
+  {
+    title: "Bachelor's Degree",
+    school_name: "Jain University",
+    icon: "https://threedportfolio.000webhostapp.com/jain.png",
+    grade: "8.2",
+    iconBg: "#aaa7cc",
+    date: "July 2018 - June 2022",
+    location: "Bengaluru, Karnataka",
+    specialPoints: [
+      {
+        heading: "Programming and Algorithms :",
+        points: [
+          "Proficiency in languages like Python, Java, and C++.",
+          "Application of data structures and algorithms for problem-solving.",
+        ],
+      },
+      {
+        heading: "Artificial Intelligence (AI) and Machine Learning:",
+        points: [
+          "Fundamentals of AI and machine learning techniques.",
+          "Practical application of AI in solving real-world problems.",
+        ],
+      },
+      {
+        heading: "Web Development and Databases:",
+        points: [
+          "Skills in front-end and back-end development using technologies like HTML, CSS, and JavaScript.",
+          "Database management knowledge with systems like MySQL and MongoDB.",
+        ],
+      },
+      {
+        heading: "Computer Vision and Natural Language Processing (NLP):",
+        points: [
+          "Understanding of computer vision and image processing.",
+          "Application of NLP for processing and analyzing human language.",
+        ],
+      },
+      {
+        heading: "Cybersecurity and Ethics:",
+        points: [
+          "Awareness of cybersecurity principles and best practices.",
+          "Consideration of ethical and legal aspects in technology and data privacy.",
+        ],
+      },
+    ],
+  },
+];
+
 export const experiences = [
   {
     title: "Front End Developer InternShip",
     company_name: "Terralive Envirotech Private Limited",
-    icon: terralive,
+    icon: "https://threedportfolio.000webhostapp.com/terralive.png",
     iconBg: "#F4EBBE",
     date: "July 2021 - September 2021",
     points: [
@@ -111,7 +191,7 @@ export const experiences = [
   {
     title: "Technical Content Writer",
     company_name: "Geeks for Geeks",
-    icon: geeks,
+    icon: "https://threedportfolio.000webhostapp.com/gfg.png",
     iconBg: "#b7e4c7",
     date: "March 2021 - December 2021",
     points: [
@@ -123,7 +203,7 @@ export const experiences = [
   {
     title: "Associate Software Developer",
     company_name: "Valtech",
-    icon: valtech,
+    icon: "https://threedportfolio.000webhostapp.com/valtech_logo.png",
     iconBg: "#000",
     date: "Aug 2022 - Present",
     points: [

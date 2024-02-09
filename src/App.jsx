@@ -6,7 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { About, Contact, Home, Projects, Test } from "./pages";
+import { About, Contact, Education, Home, Projects, Test } from "./pages";
 import LoaderSplash from "./components/LoaderSplash";
 
 const App = () => {
@@ -49,6 +49,7 @@ const Content = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/education" element={<Education />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/test" element={<Test />} />
       </Routes>
