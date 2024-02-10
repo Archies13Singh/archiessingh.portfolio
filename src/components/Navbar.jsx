@@ -1,100 +1,161 @@
-import { Disclosure } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import FireLogo from "../assets/images/fire-unscreen.gif";
 
-const navigation = [
-  { name: "About", href: "/about", current: true },
-  { name: "Project", href: "/projects", current: false },
-  { name: "Education", href: "/education", current: false },
-];
+const Navbar = ({ path }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-
-export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-transparent">
-      {({ open }) => (
-        <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  <span className="absolute -inset-0.5" />
-                  <span className="sr-only">Open main menu</span>
-                  {open ? (
-                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                  ) : (
-                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                  )}
-                </Disclosure.Button>
-              </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center">
-                  <a href="/" className="h-44 mt-5">
-                    <img
-                      className="h-8 w-auto"
-                      src={FireLogo}
-                      alt="Your Company"
-                      style={{
-                        width: "85%",
-                        height: "100%",
-                        objectFit: "contain",
-                        cursor: "pointer",
-                      }}
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div>
+      <header className="header">
+        <div className="w-15 h-10 items-center flex font-bold">
+          <NavLink to="/" className="h-44 mt-14">
+            <img
+              src={FireLogo}
+              alt="Your Image Alt Text"
+              style={{ width: "100%", height: "80%", objectFit: "cover" }}
+            />
+          </NavLink>
+        </div>
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
-                  )}
-                  aria-current={item.current ? "page" : undefined}
+        {/* Condition 1: Display normal nav for big screens */}
+        <nav className={`hidden lg:flex text-lg gap-7 font-medium`}>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-500"
+                : path === "/"
+                ? "text-white"
+                : "text-black"
+            }
+          >
+            <p style={{ fontSize: "16px" }}>About</p>
+          </NavLink>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-500"
+                : path === "/"
+                ? "text-white"
+                : "text-black"
+            }
+          >
+            <p style={{ fontSize: "16px" }}>Project</p>
+          </NavLink>
+          <NavLink
+            to="/education"
+            className={({ isActive }) =>
+              isActive
+                ? "text-blue-500"
+                : path === "/"
+                ? "text-white"
+                : "text-black"
+            }
+          >
+            <p style={{ fontSize: "16px" }}>Education</p>
+          </NavLink>
+        </nav>
+
+        {/* Condition 2: Display hamburger menu button for small screens */}
+        <div className="block lg:hidden pr-7">
+          <button onClick={toggleMenu}>
+            {isMenuOpen ? (
+              // Close icon when menu is open
+              <img
+                src="https://threedportfolio.000webhostapp.com/close-icon.svg"
+                alt="closeicon"
+                width={40}
+                height={40}
+                style={{ objectFit: "contain" }}
+              />
+            ) : (
+              // Hamburger icon when menu is closed
+              <img
+                src="https://threedportfolio.000webhostapp.com/hamburger.svg"
+                alt="hamburger"
+                width={40}
+                height={40}
+                style={{ objectFit: "contain" }}
+              />
+            )}
+          </button>
+        </div>
+      </header>
+
+      {/* Vertical format for small screens */}
+      <div>
+        {isMenuOpen && (
+          <div className="lg:hidden mt-20">
+            <nav className="flex flex-col text-lg font-medium bg-white pl-7 shadow-md">
+              <NavLink
+                to="/about"
+                className="text-black"
+                style={{
+                  display: "block",
+                  padding: "8px",
+                  backgroundColor: "red",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "16px",
+                    borderWidth: 2,
+                    borderColor: "yellow",
+                  }}
                 >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
-            </div>
-          </Disclosure.Panel>
-        </>
-      )}
-    </Disclosure>
+                  About
+                </span>
+              </NavLink>
+              <NavLink
+                to="/projects"
+                className="text-black"
+                style={{
+                  display: "block",
+                  padding: "8px",
+                  backgroundColor: "red",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "16px",
+                    borderWidth: 2,
+                    borderColor: "yellow",
+                  }}
+                >
+                  Project
+                </span>
+              </NavLink>
+              <NavLink
+                to="/education"
+                className="text-black"
+                style={{
+                  display: "block",
+                  padding: "8px",
+                  backgroundColor: "red",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: "16px",
+                    borderWidth: 2,
+                    borderColor: "yellow",
+                  }}
+                >
+                  Education
+                </span>
+              </NavLink>
+            </nav>
+          </div>
+        )}
+      </div>
+    </div>
   );
-}
+};
+
+export default Navbar;
