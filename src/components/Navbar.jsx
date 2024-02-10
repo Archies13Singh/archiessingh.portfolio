@@ -12,12 +12,19 @@ const Navbar = ({ path }) => {
   return (
     <div>
       <header className="header">
-        <div className="w-15 h-10 items-center flex font-bold">
-          <NavLink to="/" className="h-44 mt-14">
+        <div
+          className="w-15 h-10 items-center justify-center flex font-bold"
+        >
+          <NavLink to="/">
             <img
               src={FireLogo}
               alt="Your Image Alt Text"
-              style={{ width: "100%", height: "80%", objectFit: "cover" }}
+              width={window.innerWidth <= 768 ? 80 : 100}
+              height={window.innerWidth <= 768 ? 80 : 100}
+              style={{
+                objectFit: "cover",
+                marginLeft:22,
+              }}
             />
           </NavLink>
         </div>
@@ -92,21 +99,18 @@ const Navbar = ({ path }) => {
       <div>
         {isMenuOpen && (
           <div className="lg:hidden mt-20">
-            <nav className="flex flex-col text-lg font-medium bg-white pl-7 shadow-md">
+            <nav className="flex flex-1 flex-col text-lg font-medium bg-gray-200 z-10  pl-7 shadow-md">
               <NavLink
                 to="/about"
                 className="text-black"
                 style={{
                   display: "block",
                   padding: "8px",
-                  backgroundColor: "red",
                 }}
               >
                 <span
                   style={{
                     fontSize: "16px",
-                    borderWidth: 2,
-                    borderColor: "yellow",
                   }}
                 >
                   About
@@ -118,14 +122,11 @@ const Navbar = ({ path }) => {
                 style={{
                   display: "block",
                   padding: "8px",
-                  backgroundColor: "red",
                 }}
               >
                 <span
                   style={{
                     fontSize: "16px",
-                    borderWidth: 2,
-                    borderColor: "yellow",
                   }}
                 >
                   Project
@@ -137,14 +138,11 @@ const Navbar = ({ path }) => {
                 style={{
                   display: "block",
                   padding: "8px",
-                  backgroundColor: "red",
                 }}
               >
                 <span
                   style={{
                     fontSize: "16px",
-                    borderWidth: 2,
-                    borderColor: "yellow",
                   }}
                 >
                   Education
