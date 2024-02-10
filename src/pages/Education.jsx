@@ -27,8 +27,13 @@ const Education = () => {
 
   return (
     <section className="max-container">
-      <div className="py-12">
-        <h3 className="subhead-text">Education</h3>
+      <div>
+      <h1 className="head-text">
+        My{" "}
+        <span className="blue-gradient_text font-semibold drop-shadow">
+          Education
+        </span>
+      </h1>
         <div className="mt-5 flex gap-3 flex-col text-slate-500">
           <p>
           Explore my academic journey and qualifications, where a passion for learning meets a commitment to excellence. Discover the foundations that shape my expertise and drive for continuous growth in the education section .

@@ -12,8 +12,10 @@ const About = () => {
   return (
     <section className="max-container">
       <h1 className="head-text">
-        Hello, I am{" "}
-        <span className="blue-gradient font-semibold drop-shadow">Archies</span>
+        Hello I am{" "}
+        <span className="blue-gradient_text font-semibold drop-shadow">
+          Archies Singh
+        </span>
       </h1>
       <div className="mt-5 flex gap-3 flex-col text-slate-500">
         <p>
