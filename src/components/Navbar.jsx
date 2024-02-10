@@ -9,13 +9,15 @@ const Navbar = ({ path }) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const resetMenuTab = ()=>{
+    setIsMenuOpen(false)
+  }
+
   return (
     <div>
       <header className="header">
-        <div
-          className="w-15 h-10 items-center justify-center flex font-bold"
-        >
-          <NavLink to="/">
+        <div className="items-center justify-center flex font-bold h-10">
+          <NavLink to="/" onClick={resetMenuTab}>
             <img
               src={FireLogo}
               alt="Your Image Alt Text"
@@ -23,7 +25,8 @@ const Navbar = ({ path }) => {
               height={window.innerWidth <= 768 ? 80 : 100}
               style={{
                 objectFit: "cover",
-                marginLeft:22,
+                marginLeft: 22,
+                marginTop: -12,
               }}
             />
           </NavLink>
@@ -75,7 +78,11 @@ const Navbar = ({ path }) => {
             {isMenuOpen ? (
               // Close icon when menu is open
               <img
-                src="https://threedportfolio.000webhostapp.com/close-icon.svg"
+                src={
+                  path === "/"
+                    ? "https://threedportfolio.000webhostapp.com/close-icon_home.svg"
+                    : "https://threedportfolio.000webhostapp.com/close-icon.svg"
+                }
                 alt="closeicon"
                 width={40}
                 height={40}
@@ -84,7 +91,11 @@ const Navbar = ({ path }) => {
             ) : (
               // Hamburger icon when menu is closed
               <img
-                src="https://threedportfolio.000webhostapp.com/hamburger.svg"
+                src={
+                  path === "/"
+                    ? "https://threedportfolio.000webhostapp.com/hamburger_home.svg"
+                    : "https://threedportfolio.000webhostapp.com/hamburger.svg"
+                }
                 alt="hamburger"
                 width={40}
                 height={40}
