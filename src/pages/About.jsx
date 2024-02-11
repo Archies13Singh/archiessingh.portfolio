@@ -7,24 +7,43 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import Cta from "../components/Cta";
 import CircleView from "../components/CircleView";
+import DropDown from "../components/Dropdown";
 
 const About = () => {
   return (
     <section className="max-container">
-      <h1 className="head-text">
-        Hello I am{" "}
-        <span className="blue-gradient_text font-semibold drop-shadow">
-          Archies Singh
-        </span>
-      </h1>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="head-text">
+            Hello I am{" "}
+            <span className="blue-gradient_text font-semibold drop-shadow">
+              Archies Singh
+            </span>
+          </h1>
+        </div>
+        {window.innerWidth > 768 && (
+          <div>
+            <DropDown />
+          </div>
+        )}
+      </div>
       <div className="mt-5 flex gap-3 flex-col text-slate-500">
-        <p>
-          Software Engineer based in Bengaluru, India. As a passionate front-end
-          developer, I possess a keen eye for design and a love for creating
-          seamless, user-friendly experiences. With a robust foundation in HTML,
-          CSS, and JavaScript, I bring a blend of creativity and technical
-          expertise to the table..
-        </p>
+        <div>
+          {window.innerWidth < 768 && (
+            <div>
+              <DropDown />
+            </div>
+          )}
+        </div>
+        <div>
+          <p>
+            Software Engineer based in Bengaluru, India. As a passionate
+            front-end developer, I possess a keen eye for design and a love for
+            creating seamless, user-friendly experiences. With a robust
+            foundation in HTML, CSS, and JavaScript, I bring a blend of
+            creativity and technical expertise to the table..
+          </p>
+        </div>
       </div>
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">My Skills</h3>
