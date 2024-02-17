@@ -30,8 +30,10 @@ const About = () => {
       <div className="mt-5 flex gap-3 flex-col text-slate-500">
         <div>
           {window.innerWidth < 768 && (
-            <div>
-              <DropDown />
+            <div className="grid justify-items-stretch">
+              <div className="flex justify-self-center">
+                <DropDown />
+              </div>
             </div>
           )}
         </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import FireLogo from "../assets/images/fire-unscreen.gif";
+import DropDown from "./Dropdown";
 
 const Navbar = ({ path }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -73,7 +74,7 @@ const Navbar = ({ path }) => {
         </nav>
 
         {/* Condition 2: Display hamburger menu button for small screens */}
-        <div className="block lg:hidden pr-7">
+        <div className="block lg:hidden pr-7 flex items-center gap-4">
           <button onClick={toggleMenu}>
             {isMenuOpen ? (
               // Close icon when menu is open
