@@ -4,10 +4,10 @@ import { Canvas } from "@react-three/fiber";
 import { Circle, OrbitControls } from "@react-three/drei";
 
 const CircleView = ({ url }) => {
-  const [texture, setTexture] = useState("https://threedportfolio.000webhostapp.com/css.svg");
-  
+  const [texture, setTexture] = useState("");
+
   const textureLoader = new THREE.TextureLoader();
-  
+
   textureLoader.load(
     url,
     (loadedTexture) => {
@@ -21,7 +21,7 @@ const CircleView = ({ url }) => {
 
   // Fallback material
   const fallbackMaterial = new THREE.MeshBasicMaterial({
-    color: "red", 
+    color: "red",
   });
 
   return (
