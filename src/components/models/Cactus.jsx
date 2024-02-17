@@ -1,15 +1,17 @@
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import dancingCactus from "../../assets/3d/cactus.glb";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 
 const Cactus = (props) => {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF(dancingCactus);
+  const dracoLoader = new DRACOLoader();
+  const { nodes, materials, animations } = useGLTF(dancingCactus, dracoLoader);
   const { actions } = useAnimations(animations, group);
 
-  useEffect(()=>{
-    actions["ArmatureAction"].play()
-  },[])
+  useEffect(() => {
+    actions["ArmatureAction"].play();
+  }, []);
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">

@@ -2,11 +2,12 @@ import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import tavrenScene from "../../assets/3d/tavern_in_snow.glb"
 import { useFrame,useThree } from "@react-three/fiber";
-
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 
 const SnowHouse = ({ isRotating, setIsRotating,setCurrentStage, ...props })=>{
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF(tavrenScene);
+  const dracoLoader = new DRACOLoader();
+  const { nodes, materials, animations } = useGLTF(tavrenScene, dracoLoader);
   const { actions } = useAnimations(animations, group);
   const { gl, viewport } = useThree();
   const lastX = useRef(0);

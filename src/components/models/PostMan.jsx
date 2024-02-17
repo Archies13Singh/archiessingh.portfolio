@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import scene from "../../assets/3d/jo_on_bike__rigged__animated.glb";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader";
 
 const PostMan = ({ currentAnimatiion, ...props }) => {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF(scene);
+  const dracoLoader = new DRACOLoader();
+  const { nodes, materials, animations } = useGLTF(scene, dracoLoader);
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {

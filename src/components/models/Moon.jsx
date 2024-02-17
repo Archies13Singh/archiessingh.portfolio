@@ -6,8 +6,8 @@ import moon from "../../assets/3d/animated_moon.glb";
 const Moon = () => {
   const group = useRef();
   const dracoLoader = new DRACOLoader();
-  console.log(dracoLoader);
   const { nodes, materials, animations } = useGLTF(moon, dracoLoader);
+  console.log(nodes);
   const { actions } = useAnimations(animations, group);
   const [moonposition, setMoonPosition] = useState([-2, 2.5, 0]);
   const [moonScale, setMoonScale] = useState([]);
