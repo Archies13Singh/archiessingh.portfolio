@@ -192,6 +192,9 @@ const Contact = () => {
                       ? "w-[80%] h-[75%] object-contain"
                       : "w-[80%] h-[60%] object-contain"
                   }`}
+                  onClick={() => {
+                    window.open(social.link, "_blank");
+                  }}
                 />
               </div>
               <div
