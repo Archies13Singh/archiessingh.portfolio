@@ -53,7 +53,12 @@ const About = () => {
           {skills.map((skill) => (
             <div className="block-container rounded-full  w-20 h-20 pt-6 shadow-xl">
               <div className="btn-front rounded-full flex justify-center items-center shadow">
-                <CircleView url={skill.imageUrl} key={skill.name} />
+                {/* <CircleView url={skill.imageUrl} key={skill.name} /> */}
+                <img
+                  src={skill.imageUrl}
+                  alt={skill.imageUrl}
+                  className="w-[80%] h-[60%] object-contain"
+                />
               </div>
               <div className="btn-back rounded-full" />
             </div>

@@ -178,13 +178,25 @@ const Contact = () => {
           {socialLinks.map((social) => (
             <div className="block-container  rounded-lg  w-20 h-20 pt-6 shadow-xl">
               <div className="btn-front  rounded-lg flex justify-center items-center shadow-xl cursor-pointer">
-                <SocialHandles
+                {/* <SocialHandles
                   url={social.iconUrl}
                   key={social.name}
                   link={social.link}
+                /> */}
+                <img
+                  src={social.iconUrl}
+                  alt={social.name}
+                  className={`${
+                    social.iconUrl ===
+                    "https://threedportfolio.000webhostapp.com/Instagram.svg"
+                      ? "w-[80%] h-[75%] object-contain"
+                      : "w-[80%] h-[60%] object-contain"
+                  }`}
                 />
               </div>
-              <div className={`btn-back rounded-lg ${social.bg_color} animate-pulse`} />
+              <div
+                className={`btn-back rounded-lg ${social.bg_color} animate-pulse`}
+              />
             </div>
           ))}
         </div>

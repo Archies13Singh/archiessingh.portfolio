@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { Circle, OrbitControls } from "@react-three/drei";
 
 const CircleView = ({ url }) => {
-  const [texture, setTexture] = useState("");
+  const [texture, setTexture] = useState(null);
 
   const textureLoader = new THREE.TextureLoader();
 

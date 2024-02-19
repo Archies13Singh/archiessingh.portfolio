@@ -22,72 +22,72 @@ import {
 
 export const skills = [
   {
-    imageUrl: css,
+    imageUrl: "https://threedportfolio.000webhostapp.com/css.svg",
     name: "CSS",
     type: "Frontend",
   },
   {
-    imageUrl: express,
+    imageUrl: "https://threedportfolio.000webhostapp.com/express.png",
     name: "Express",
     type: "Backend",
   },
   {
-    imageUrl: git,
+    imageUrl: "https://threedportfolio.000webhostapp.com/git.svg",
     name: "Git",
     type: "Version Control",
   },
   {
-    imageUrl: github,
+    imageUrl: "https://threedportfolio.000webhostapp.com/github_black.png",
     name: "GitHub",
     type: "Version Control",
   },
   {
-    imageUrl: html,
+    imageUrl: "https://threedportfolio.000webhostapp.com/html.png",
     name: "HTML",
     type: "Frontend",
   },
   {
-    imageUrl: javascript,
+    imageUrl: "https://threedportfolio.000webhostapp.com/javascript.svg",
     name: "JavaScript",
     type: "Frontend",
   },
   {
-    imageUrl: mongodb,
+    imageUrl: "https://threedportfolio.000webhostapp.com/mongodb.svg",
     name: "MongoDB",
     type: "Database",
   },
   {
-    imageUrl: mui,
+    imageUrl: "https://threedportfolio.000webhostapp.com/materialUi.png",
     name: "Material-UI",
     type: "Frontend",
   },
   {
-    imageUrl: nextjs,
+    imageUrl: "https://threedportfolio.000webhostapp.com/nextjs.svg",
     name: "Next.js",
     type: "Frontend",
   },
   {
-    imageUrl: nodejs,
+    imageUrl: "https://threedportfolio.000webhostapp.com/nodejs.png",
     name: "Node.js",
     type: "Backend",
   },
   {
-    imageUrl: react,
+    imageUrl: "https://threedportfolio.000webhostapp.com/react.png",
     name: "React",
     type: "Frontend",
   },
   {
-    imageUrl: redux,
+    imageUrl: "https://threedportfolio.000webhostapp.com/redux.png",
     name: "Redux",
     type: "State Management",
   },
   {
-    imageUrl: tailwindcss,
+    imageUrl: "https://threedportfolio.000webhostapp.com/tailwind.png",
     name: "Tailwind CSS",
     type: "Frontend",
   },
   {
-    imageUrl: typescript,
+    imageUrl: "https://threedportfolio.000webhostapp.com/typescript.svg",
     name: "TypeScript",
     type: "Frontend",
   },
@@ -218,19 +218,19 @@ export const experiences = [
 export const socialLinks = [
   {
     name: "Contact",
-    iconUrl: instagram,
+    iconUrl: "https://threedportfolio.000webhostapp.com/Instagram.svg",
     link: "https://www.instagram.com/singh.archies13/",
     bg_color: "bg-red-300",
   },
   {
     name: "GitHub",
-    iconUrl: github,
+    iconUrl: "https://threedportfolio.000webhostapp.com/github.png",
     link: "https://github.com/Archies13Singh",
     bg_color: "bg-neutral-600",
   },
   {
     name: "LinkedIn",
-    iconUrl: linkedin,
+    iconUrl: "https://threedportfolio.000webhostapp.com/linkedin.svg",
     link: "https://www.linkedin.com/in/archies-singh-248721165/",
     bg_color: "bg-sky-600",
   },
