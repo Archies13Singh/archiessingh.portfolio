@@ -10,9 +10,9 @@ const Navbar = ({ path }) => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const resetMenuTab = ()=>{
-    setIsMenuOpen(false)
-  }
+  const resetMenuTab = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <div>
@@ -111,14 +111,17 @@ const Navbar = ({ path }) => {
       <div>
         {isMenuOpen && (
           <div className="lg:hidden mt-20">
-            <nav className="flex flex-1 flex-col text-lg font-medium bg-gray-200 z-10  pl-7 shadow-md">
+            <nav className="flex flex-1 flex-col text-lg font-medium bg-gray-200 z-10   shadow-md">
               <NavLink
                 to="/about"
-                className="text-black"
+                className="text-black hover:bg-sky-700 hover:text-white"
                 style={{
                   display: "block",
                   padding: "8px",
+                  transition: "background-color 0.3s ease", // Adding transition for smooth effect
+                  textAlign: "center",
                 }}
+                // onClick={()=>setIsMenuOpen(false)}
               >
                 <span
                   style={{
@@ -130,11 +133,14 @@ const Navbar = ({ path }) => {
               </NavLink>
               <NavLink
                 to="/projects"
-                className="text-black"
+                className="text-black hover:bg-sky-700 hover:text-white"
                 style={{
                   display: "block",
                   padding: "8px",
+                  transition: "background-color 0.3s ease",
+                  textAlign: "center",
                 }}
+                // onClick={()=>setIsMenuOpen(false)}
               >
                 <span
                   style={{
@@ -146,11 +152,14 @@ const Navbar = ({ path }) => {
               </NavLink>
               <NavLink
                 to="/education"
-                className="text-black"
+                className="text-black hover:bg-sky-700 hover:text-white"
                 style={{
                   display: "block",
                   padding: "8px",
+                  transition: "background-color 0.3s ease",
+                  textAlign: "center",
                 }}
+                // onClick={()=>setIsMenuOpen(false)}
               >
                 <span
                   style={{
