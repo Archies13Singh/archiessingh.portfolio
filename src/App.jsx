@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router,
   Routes,
   useLocation,
+  Outlet
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { About, Contact, Education, Home, Projects, Test } from "./pages";

@@ -133,7 +133,7 @@ const Navbar = ({ path }) => {
               </NavLink>
               <NavLink
                 to="/projects"
-                className="text-black hover:bg-sky-700 hover:text-white"
+                className="text-black hover:bg-sky-600 hover:text-white"
                 style={{
                   display: "block",
                   padding: "8px",
@@ -152,7 +152,7 @@ const Navbar = ({ path }) => {
               </NavLink>
               <NavLink
                 to="/education"
-                className="text-black hover:bg-sky-700 hover:text-white"
+                className="text-black hover:bg-sky-500 hover:text-white"
                 style={{
                   display: "block",
                   padding: "8px",
