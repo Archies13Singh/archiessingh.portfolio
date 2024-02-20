@@ -35,6 +35,12 @@ const Contact = () => {
     }
   }, [isPlaying, natureSound]);
 
+  useEffect(() => {
+    if (!isLoading && currentAnimatiion === "idle") {
+      setIsPlaying(false);
+    }
+  }, [isLoading, currentAnimatiion]);
+
   const handleChange = (e) => {
     setForm({
       ...form,
@@ -167,6 +173,7 @@ const Contact = () => {
                 rotation={[12.6, -1.6, 0]}
                 scale={[2.5, 2.5, 2.5]}
                 currentAnimatiion={currentAnimatiion}
+                isLoading={isLoading}
               />
             </Suspense>
           </Canvas>
