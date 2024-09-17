@@ -37,7 +37,7 @@ export const skills = [
     type: "Version Control",
   },
   {
-    imageUrl: "https://threedportfolio.000webhostapp.com/github_black.png",
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fgithub_black.png?alt=media&token=9beedc6b-25d4-447b-aee4-0d3d6d765740",
     name: "GitHub",
     type: "Version Control",
   },
@@ -113,7 +113,7 @@ export const education = [
   {
     title: "Higer Secondary Education ",
     school_name: "Sri Chaitanya School",
-    icon: "https://threedportfolio.000webhostapp.com/chaitanya.png",
+    icon: "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fchaitanya.png?alt=media&token=98a22abc-7ef4-4411-a354-6d461f6ce740",
     grade: "94%",
     location: "Hyderabad, Telangana",
     iconBg: "#b7e4c7",
@@ -128,7 +128,7 @@ export const education = [
   {
     title: "Bachelor's Degree",
     school_name: "Jain University",
-    icon: "https://threedportfolio.000webhostapp.com/jain.png",
+    icon: "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fjain.png?alt=media&token=4d03df15-a798-4fd2-a189-d855c13c3c01",
     grade: "8.2",
     iconBg: "#aaa7cc",
     date: "July 2018 - June 2022",
@@ -264,8 +264,8 @@ export const projects = [
     tech_stack: [
       "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Freact.png?alt=media&token=6db1e6a8-add4-41d9-b793-0718ae47d8d5",
       "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fjavascript.svg?alt=media&token=246d51a4-46cc-421e-9377-e2f927209db9",
-      "https://threedportfolio.000webhostapp.com/threeJs.png",
-      "https://threedportfolio.000webhostapp.com/emailJs.png",
+      "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FthreeJs.png?alt=media&token=004aaae1-401c-4111-8073-10718888759c",
+      "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FemailJs.png?alt=media&token=6b28f896-919b-48d3-a62f-255a9b17fb23",
     ],
     text_theme: "text-teal-500",
   },
