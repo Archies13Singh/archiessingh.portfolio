@@ -48,7 +48,7 @@ export default function DropDown() {
             <Menu.Item>
               {({ active }) => (
                 <a
-                  href="https://threedportfolio.000webhostapp.com/Archies's%20Resume.pdf"
+                  href="https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FArchies_Singh_kk.pdf?alt=media&token=38272bee-067a-49b9-9398-0353fb8f53fd"
                   className={classNames(
                     active ? "bg-gray-100 text-gray-900" : "text-gray-700",
                     " px-4 py-2 text-sm flex  "
@@ -57,7 +57,7 @@ export default function DropDown() {
                 >
                   <button className="flex gap-2 items-center">
                     <img
-                      src="https://threedportfolio.000webhostapp.com/preview.svg"
+                      src="https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fpreview.svg?alt=media&token=b4940381-f367-4a9b-a543-b8ac2152ee1d"
                       width={20}
                       height={20}
                     />
@@ -79,7 +79,7 @@ export default function DropDown() {
                     onClick={(e) => handleDownloadClick(e)}
                   >
                     <img
-                      src="https://threedportfolio.000webhostapp.com/download.svg"
+                      src="https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fdownload.svg?alt=media&token=d55077a4-926a-483e-ad1f-c4b62988e791"
                       width={20}
                       height={20}
                     />

@@ -278,7 +278,7 @@ export const projects = [
     github_link: "https://github.com/Archies13Singh/HumanIdentifier-",
     tech_stack: [
       "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fnextjs.svg?alt=media&token=f16ffc28-914d-4d64-b4a5-a012d337b7b8",
-      "https://threedportfolio.000webhostapp.com/tensorflow.svg",
+      "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Ftensorflow.png?alt=media&token=6a0229e9-5f8d-4901-9197-3fc368f018ae",
     ],
     text_theme: "text-sky-600",
   },
