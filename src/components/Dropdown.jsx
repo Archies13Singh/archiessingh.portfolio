@@ -83,7 +83,7 @@ export default function DropDown() {
                       width={20}
                       height={20}
                     />
-                    <p>Download</p>
+                    <p>Downl</p>
                   </button>
                 </a>
               )}
