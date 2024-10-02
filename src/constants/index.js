@@ -297,4 +297,19 @@ export const projects = [
     ],
     text_theme: "text-neutral-600",
   },
+  {
+    iconUrl: threads,
+    theme: "btn-back-yellow",
+    name: "Image Cloud Storage",
+    live_link: "https://image-cloud-storage.vercel.app/login",
+    description:
+    "This project enables users to upload, copy, update, and delete images efficiently using a user-friendly interface built with React and Firebase. It integrates secure cloud storage for images, offering seamless management and accessibility of uploaded media.",
+    github_link: "https://github.com/Archies13Singh/imageCloudStorage",
+    tech_stack: [
+      "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Freact.png?alt=media&token=6db1e6a8-add4-41d9-b793-0718ae47d8d5",
+      "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FmaterialUi.png?alt=media&token=0f33e96c-fd6c-4b78-841e-d4c02a5f3426",
+      "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Ffirebase.svg?alt=media&token=a71323a2-7ddf-4508-99b5-1b20b15c47e7",
+    ],
+    text_theme: "text-orange-600",
+  },
 ];

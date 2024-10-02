@@ -81,8 +81,8 @@ const Navbar = ({ path }) => {
               <img
                 src={
                   path === "/"
-                    ? "https://threedportfolio.000webhostapp.com/close-icon_home.svg"
-                    : "https://threedportfolio.000webhostapp.com/close-icon.svg"
+                    ? "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fclose-icon.svg?alt=media&token=138deebe-991e-456d-ac35-4dd157028059"
+                    : "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fclose-icon.svg?alt=media&token=138deebe-991e-456d-ac35-4dd157028059"
                 }
                 alt="closeicon"
                 width={40}
@@ -94,12 +94,12 @@ const Navbar = ({ path }) => {
               <img
                 src={
                   path === "/"
-                    ? "https://threedportfolio.000webhostapp.com/hamburger_home.svg"
-                    : "https://threedportfolio.000webhostapp.com/hamburger.svg"
+                    ? "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fhamburger_home.svg?alt=media&token=d6fbce94-fd02-47f4-ac3f-d641874bf84e"
+                    : "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fhamburger.svg?alt=media&token=4cf08012-6f69-4cb9-913e-2916f9d93359"
                 }
                 alt="hamburger"
-                width={40}
-                height={40}
+                width={35}
+                height={35}
                 style={{ objectFit: "contain" }}
               />
             )}

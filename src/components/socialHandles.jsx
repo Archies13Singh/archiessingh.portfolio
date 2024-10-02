@@ -5,7 +5,7 @@ import { Box, Circle, OrbitControls } from "@react-three/drei";
 
 const SocialHandles = ({ url, link }) => {
   const [texture, setTexture] = useState(
-    "https://threedportfolio.000webhostapp.com/css.svg"
+    "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fcss.svg?alt=media&token=65705eb5-8497-4d9b-9b55-e3a5e3d96d7d"
   );
   const textureLoader = new THREE.TextureLoader();
   textureLoader.load(

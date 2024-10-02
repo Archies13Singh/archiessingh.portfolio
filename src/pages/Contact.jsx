@@ -195,7 +195,7 @@ const Contact = () => {
                   alt={social.name}
                   className={`${
                     social.iconUrl ===
-                    "https://threedportfolio.000webhostapp.com/Instagram.svg"
+                    "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FInstagram.svg?alt=media&token=b56c33d8-1bf6-440d-b0a1-2d6f04c60b7c"
                       ? "w-[80%] h-[75%] object-contain"
                       : "w-[80%] h-[60%] object-contain"
                   }`}
