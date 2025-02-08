@@ -27,7 +27,7 @@ export function CertificateCarousal() {
   return (
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
+        <div className="embla__container py-8">
           {certificates.map((certificate, index) => (
             <div className="embla__slide" key={certificate.name}>
               <img className="shadow-lg" src={certificate.imageUrl} alt={certificate.name}/>

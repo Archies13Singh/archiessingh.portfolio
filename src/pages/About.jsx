@@ -164,7 +164,9 @@ const About = () => {
               valuable skills to enhance my expertise in different domains.
             </p>
           </div>
+          <div>
           <CertificateCarousal />
+          </div>
         </div>
       </div>
       <hr className="border-slate-200" />
