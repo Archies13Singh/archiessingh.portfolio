@@ -102,7 +102,7 @@ export const education = [
   {
     title: "Inter School",
     school_name: "Sanjuba High School",
-    icon: "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fgfg.png?alt=media&token=f7eced1d-50b4-488d-b233-e17d7791887a",
+    icon: "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FSanjuba.png?alt=media&token=31247db8-7005-4fe4-8971-d99f84d378ea",
     grade: 8.0,
     location: "Nagpur, Maharashtra",
     iconBg: "#F4EBBE",
