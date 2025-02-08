@@ -206,7 +206,7 @@ export const experiences = [
     ],
   },
   {
-    title: "Associate Software Developer",
+    title: "Software Developer",
     company_name: "Valtech",
     icon: "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fvaltech_logo.png?alt=media&token=5e74a994-8689-4fbd-82c6-a6e1fb8f62b2",
     iconBg: "#000",
