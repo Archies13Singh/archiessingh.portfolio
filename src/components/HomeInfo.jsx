@@ -19,7 +19,7 @@ const renderContent = {
     <h1 className="sm:text-xl sm:leading-snug text-center neo-brutalism-biege py-4 px-8 text-black mx-8">
       Hi, I am <span className="font-semibold">Archies Singh</span> 👋
       <br />
-      Software Engineer from Bengaluru
+      Software Developer from Bengaluru
     </h1>
   ),
   2: (

@@ -91,6 +91,11 @@ export const skills = [
     name: "TypeScript",
     type: "Frontend",
   },
+  {
+    imageUrl: "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fpython.svg?alt=media&token=74589a8d-bd7c-4768-9477-56ce31d454e4",
+    name: "Python",
+    type:"Backend",
+  }
 ];
 
 export const education = [
@@ -208,9 +213,13 @@ export const experiences = [
     date: "Aug 2022 - Present",
     points: [
       "Worked for Linde Client, focusing on developing applications with React Native.",
-      "Designed various aspects of the user interface, including pages and navigation.Implemented UI elements such as color themes(24 themes) to enhance the visual appeal.Collaborated closely with Redux for state management.",
-      "Integrated APIs into the application. Also Implemented Payment Integration for enhanced functionality.",
-      "Executed API integrations for Data Translation, utilizing the existing dashboard for easy language updates across each store",
+      "Developed and maintained responsive user interfaces using React.js and React Native, enhancing frontend architecture and performance. Implemented RESTful APIs and microservices to improve system integration and user interactions.",
+      "Integrated third-party payment gateways (Agave, Wespac) based on country-specific regulations, while working on features like data filtering, product details and pricing, and ensuring cross-platform consistency.",
+      "Led brainstorming sessions with cross-functional teams to align product development with business goals, ensuring feature prioritization and effective planning. Worked on translating product requirements into technical specifications, ensuring efficient implementation.",
+      "Led code reviews, mentored junior developers, and drove discussions on frontend best practices, design patterns, and performance optimization techniques. Championed unit testing with Jasmine and Jest, reducing bugs and improving code quality.",
+      "Deployed scalable web applications on Azure, leveraging CI/CD pipelines to streamline the deployment process and maintain high-quality standards.",
+      "Managed state with Redux for advanced features like biometric passcode authentication, session expiry, and multi-language support, ensuring a reliable and seamless user experience.",
+      "Implemented efficient version control practices using Git, ensuring seamless collaboration with cross-functional teams. Utilized Webpack for optimizing build processes and improving the performance of web applications."
     ],
   },
 ];
@@ -313,3 +322,31 @@ export const projects = [
     text_theme: "text-orange-600",
   },
 ];
+
+
+export const certificates = [
+  {
+    imageUrl : "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FJavaScript_Animations_page-0001.jpg?alt=media&token=01c52191-44a5-44af-a70a-f6850f042415",
+    name: "JavaScript Animations",
+  },
+  {
+    imageUrl : "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FWordPress-SEO.jpg?alt=media&token=1ead70ab-0d1b-4858-8f15-416ec774763f",
+    name: "Increase SEO Traffic with WordPress",
+  },
+  {
+    imageUrl : "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FGoogle_Python_Crash_Course.jpg?alt=media&token=3cd6e7c3-39e4-4cdc-8f5a-425b2c63d883",
+    name: "Google Python Certification",
+  },
+  {
+    imageUrl : "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FPCEP_Python_Certificate.jpg?alt=media&token=64480d02-4e89-4b67-b5ca-003b68772294",
+    name: "PCEP Python Certification",
+  },
+  {
+    imageUrl : "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FPython_OPERATING_SYSTE.jpg?alt=media&token=596fcde7-07be-462b-a263-c16bc301242c",
+    name: "Using Python to Interact with the Operating System",
+  },
+  {
+    imageUrl : "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FDeepLearningCourse.jpg?alt=media&token=537db9b3-225d-490f-b160-90331891f6d1",
+    name: "Deep Learning",
+  },
+]
