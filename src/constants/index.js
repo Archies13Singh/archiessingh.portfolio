@@ -247,6 +247,26 @@ export const socialLinks = [
 
 export const projects = [
   {
+    iconUrl: threads,
+    theme: "btn-back-purple ",
+    name: "AI SHORT VIDEO GENERATOR",
+    live_link: "https://ai-youtube-short-video-generator-zynn.vercel.app/",
+    description:
+    "The AI Short Video Generator lets you create stunning videos effortlessly with AI-powered audio, image, script generation, and captions. Seamlessly integrate advanced tools like AI Guru, Deepgram, and Google Gemini to streamline content creation. Start creating today with secure login and real-time management!",
+    github_link: "https://github.com/Archies13Singh/ai-youtube-short-video-generator",
+    tech_stack: [
+      "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Freact.png?alt=media&token=6db1e6a8-add4-41d9-b793-0718ae47d8d5",
+      "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fnextjs.svg?alt=media&token=f16ffc28-914d-4d64-b4a5-a012d337b7b8",
+      "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fconvex.png?alt=media&token=a050ad9f-bd46-49c5-8b4a-93977ad0ca35",
+      "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Ftailwind.png?alt=media&token=51d67989-1406-4a82-9509-9acd1021ffce",
+      "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fdeepgram.png?alt=media&token=067067d5-c717-445b-96c3-01c577d9ad45",
+      "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Ffirebase.svg?alt=media&token=a71323a2-7ddf-4508-99b5-1b20b15c47e7",
+      "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Finggest.png?alt=media&token=158f13f1-15a0-4d0e-8750-17e9e79ce40e",
+      
+    ],
+    text_theme: "text-orange-600",
+  },
+  {
     iconUrl: pricewise,
     theme: "btn-back-red",
     name: "Social Nest",
@@ -321,6 +341,7 @@ export const projects = [
     ],
     text_theme: "text-orange-600",
   },
+  
 ];
 
 

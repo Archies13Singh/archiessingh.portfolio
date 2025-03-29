@@ -47,8 +47,7 @@ const Projects = () => {
                 >
                   Techology Used
                 </p>
-                <div className="flex justify-evenly p-4 flex-wrap">
-                  {/* {console.log(project.tech_stack)} */}
+                <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4">
                   {project.tech_stack &&
                     Array.isArray(project.tech_stack) &&
                     project.tech_stack.map((stack, index) => (
