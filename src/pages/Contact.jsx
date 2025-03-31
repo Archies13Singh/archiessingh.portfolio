@@ -71,6 +71,7 @@ const Contact = () => {
           from_email: form.email,
           to_email: "archiessingh04@gmail.com",
           message: form.message,
+          from_website : "PortFolio"
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
