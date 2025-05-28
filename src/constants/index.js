@@ -347,6 +347,10 @@ export const projects = [
 
 export const certificates = [
   {
+    imageUrl : "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FgoogleAI.png?alt=media&token=45bcc535-9eb0-4908-b097-ee74d0c98834",
+    name: "Google Cloud Skills Boost",
+  },
+  {
     imageUrl : "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FJavaScript_Animations_page-0001.jpg?alt=media&token=01c52191-44a5-44af-a70a-f6850f042415",
     name: "JavaScript Animations",
   },
