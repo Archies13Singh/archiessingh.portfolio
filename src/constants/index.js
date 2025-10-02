@@ -210,7 +210,7 @@ export const experiences = [
     company_name: "Valtech",
     icon: "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2Fvaltech_logo.png?alt=media&token=5e74a994-8689-4fbd-82c6-a6e1fb8f62b2",
     iconBg: "#000",
-    date: "Aug 2022 - Present",
+    date: "Aug 2022 - Sept 2025",
     points: [
       "Worked for Linde Client, focusing on developing applications with React Native.",
       "Developed and maintained responsive user interfaces using React.js and React Native, enhancing frontend architecture and performance. Implemented RESTful APIs and microservices to improve system integration and user interactions.",
@@ -220,6 +220,16 @@ export const experiences = [
       "Deployed scalable web applications on Azure, leveraging CI/CD pipelines to streamline the deployment process and maintain high-quality standards.",
       "Managed state with Redux for advanced features like biometric passcode authentication, session expiry, and multi-language support, ensuring a reliable and seamless user experience.",
       "Implemented efficient version control practices using Git, ensuring seamless collaboration with cross-functional teams. Utilized Webpack for optimizing build processes and improving the performance of web applications."
+    ],
+  },
+  {
+    title: "Full Stack Developer (SDE3)",
+    company_name: "SimpliLearn",
+    icon: "https://firebasestorage.googleapis.com/v0/b/imagestorage-6c529.appspot.com/o/HFTkj4OSb3YxnwMBg9OVQxzTrMK2%2Fimages%2FsimplilearnLogo.jpg?alt=media&token=5c77fc8c-379d-4515-bf45-509c7b306bc5",
+    iconBg: "#003853",
+    date: "Sept 2025 - Present",
+    points: [
+      "Currently working as an SDE-3 (Full Stack Developer) at Simplilearn, building scalable web applications using React, Next.js, and Node.js. I contribute to end-to-end development, optimize system performance, and deliver features that enhance user experience and business impact"
     ],
   },
 ];
